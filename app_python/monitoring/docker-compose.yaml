@@ -25,6 +25,8 @@ services:
       - target: 5000
         published: 8000
     logging: *default-logging
+    volumes:
+      - ./visits:/app/visits
     deploy: *default-deploy
 
   loki:
